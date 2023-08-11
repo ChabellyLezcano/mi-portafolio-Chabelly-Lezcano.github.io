@@ -157,7 +157,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-
+document.addEventListener("DOMContentLoaded", function() {
+    typeMessage();
+  });
+  
 
 //Este codigo es para agregar una función a cada links del menu
 //responsive
@@ -174,27 +177,13 @@ for(i=0; i < links.length;i++){
     }
 }
 
-function descargarCV() {
-    const pdfUrl = './CV_CHABELLY_LEZCANO_2023.pdf'; // Reemplaza 'cv.pdf' con la ruta correcta al archivo PDF si está en una subcarpeta.
-    const link = document.createElement('a');
-    link.href = pdfUrl;
-    link.target = '_blank'; // Abre el PDF en una nueva ventana/tab
-    link.download = 'mi_cv.pdf'; // Cambia 'mi_cv.pdf' por el nombre que deseas que tenga el archivo descargado
-    link.click();
-  }
-
-  // Asociar la función descargarCV al clic del botón
-  document.getElementById('btnDescargarCV').addEventListener('click', descargarCV);
-
- // Agrega este script a tu página para manejar el efecto "typing"
+// Agrega este script a tu página para manejar el efecto "typing"
 const messages = ["Desarrolladora web", "Programadora", "Ingeniera de Software"];
 let messageIndex = 0;
-const descriptionElement = document.getElementById("descripcion");
 const typingElement = document.querySelector(".typing");
 
 function typeMessage() {
     const message = messages[messageIndex];
-    typingElement.textContent = ""; // Limpia el contenido
     let i = 0;
 
     function type() {
@@ -218,7 +207,7 @@ function eraseMessage() {
         if (i >= 0) {
             typingElement.textContent = message.substring(0, i);
             i--;
-            setTimeout(erase, 1);
+            setTimeout(erase, 0.1); // Ajusta el tiempo para un efecto más suave
         } else {
             messageIndex = (messageIndex + 1) % messages.length;
             typeMessage();
@@ -228,7 +217,6 @@ function eraseMessage() {
     erase();
 }
 
-typeMessage(); // Inicia el proceso de typing
 
 
 var swiper = new Swiper('.swiper-container', {

@@ -140,7 +140,15 @@ body {
   padding: 0px 10px;
   background-repeat: repeat; /* Repetir la imagen en ambas direcciones */
 }
+.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.contenedor h1 {
+  text-align: center;
+}
 .perfil .contenido {
   max-width: 1100px;
   margin: auto;
@@ -169,6 +177,7 @@ body {
   border-radius: 10px; /* Bordes redondeados */
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
   padding: 20px;
+  width: 90vh;
 }
 
 .perfil .fila .col h2 {
@@ -247,6 +256,7 @@ body {
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
+  font-size: medium;
   background: linear-gradient(
     90deg,
     #0008ff,
@@ -258,7 +268,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: typing 10s steps(40, end), blink-caret 0.5s step-end infinite;
+  animation: typing 12s steps(40, end), blink-caret 0.s step-end infinite;
 }
 
 @keyframes typing {
@@ -266,7 +276,7 @@ body {
     width: 0;
   }
   to {
-    width: 100%;
+    width: 00px;
   }
 }
 
@@ -475,7 +485,7 @@ body {
   margin-bottom: 40px;
   display: flex;
   flex-wrap: nowrap; /* Evitar que los elementos se envuelvan */
-  overflow: hidden; /* Ocultar el desbordamiento horizontal */
+ 
 }
 
 .container .swiper-container {
@@ -658,7 +668,7 @@ footer {
   }
 
   .servicios {
-    margin-top: 50px;
+    margin-top: 0px;
     padding: 20px;
   }
 
@@ -680,20 +690,6 @@ footer {
     margin: 0 5px;
   }
 
-  .contacto .fila {
-    display: block !important;
-  }
-
-  .contacto .fila .col {
-    text-align: center;
-    width: 100% !important;
-  }
-
-  .contacto .fila .col .info {
-    float: left;
-    font-size: 12px;
-    width: 25%;
-  }
 
   .perfil .fila {
     display: flex;
@@ -703,15 +699,6 @@ footer {
     margin-top: 50px;
     padding-bottom: 10px;
   }
-
-  .perfil .col.card {
-    width: 75vh;
-    margin-top: 30px;
-    border-radius: 10px;
-    box-shadow: none;
-    padding-bottom: 130px;
-  }
-
   .perfil .foto-perfil {
     display: flex;
     margin-right: 30rem;
@@ -723,7 +710,7 @@ footer {
   }
 
   .servicios {
-    margin-top: 240px;
+    margin-top: 170px;
     padding: 20px;
   }
 
@@ -760,4 +747,33 @@ footer {
     margin-right: 40px; /* Agregar margen entre los contenedores */
     transition: transform 0.3s ease;
   }
+
+
+  .perfil .col.card {
+    background-color: #fffdf5; /* Color crema */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px;
+    width: 450px;
+    margin-top: 20px;
+    
+  }
+
+  /* Asegurarse de que el contenedor .col tenga un tamaño definido y utilice flexbox para centrar horizontalmente */
+.perfil .contenido .fila .col {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+}
+
+/* Estilos para la foto de perfil */
+.perfil .contenido .fila .col .foto-perfil {
+  border-radius: 50%;
+  width: 150px; /* Ajusta el tamaño de la foto según tus necesidades */
+  height: auto;
+  object-fit: cover;
+}
+
+  
+  
 }
