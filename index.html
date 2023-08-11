@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <!-- Agrega jQuery (Slick Carousel lo necesita) -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <!-- Agrega la biblioteca Slick Carousel -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <title>Porfolio</title>
+</head>
+<body>
+    <!-- Secciòn INICIO -->
+    <span class="sombra">
+        <section id="inicio" class="inicio">
+            <div class="contenido">
+                <header>
+                    <div class="logo">
+                        <i class="fa-solid fa-code" style="font-size: 30px"></i>
+                        <h1>CLB</h1>
+                    </div>
+                    <nav id="nav" class=""">
+                        <a href="#inicio">Inicio</a>
+                        <a href="#perfil">Perfil</a>
+                        <a href="#servicios">Servicios</a>
+                        <a href="#habilidades">Habilidades</a>
+                        <a href="#trabajos">Trabajos</a>
+                    </nav>
+    
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+    
+                 <div class="redes">
+                        <a href="https://twitter.com/codingWithChabe"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </header>
+    
+                <div class="fila">
+                    <div class="col">
+                        <h2>Chabelly Lezcano</h2>
+                        <p>Bienvenid@ a mi rincón virtual. Si quieres conocer más de mi trabajo, sigue deslizando.Espero que te guste mi trabajo ;)</p>
+                    </div>
+                    <div class="col">
+                        <div class="contenedor-img">
+                            <img src="./img/foto-inicio.png" alt="" class="flotar">
+                          </div>
+                          
+                    </div>
+                </div>
+            </div>
+        </section>
+    </span>
+
+
+<!-- Sección Perfil -->
+<section id="perfil" class="perfil">
+    <h1>Mi Perfil</h1>
+   
+    <div class="contenido">
+        <div class="fila">
+            
+            <div class="col">
+                <div class="contenedor-img">
+                    <img src="./img/foto-perfil.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="col card">
+                <div>
+                    <h2 class="typing">Soy...</h2>
+                    <p>Soy estudiante de Ingeniería de Software en la Universidad Politécnica de Madrid y me estoy enfocando tanto en tecnologías web como en el desarrollo de servicios cloud, con el objetivo de contribuir al avance y la eficiencia en la industria tecnológica. Como futura ingeniera, aspiro a ser parte de proyectos innovadores que tengan un impacto significativo en la sociedad y en el mundo digital.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- sección SERVICIOS -->
+    <section id="servicios" class="servicios">
+        <h2 estil>Servicios</h2>
+        <div class="fila">
+            <div class="col">
+                <div class="card">
+                    <div class="icono color1">
+                        <div class="circulo">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                    </div>
+                    <h3>Desarrollo Web</h3>
+                    <p>Crear sitios web a medida según las necesidades y requerimientos del cliente, con un diseño atractivo y funcionalidad óptima.</p>
+
+                    
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color2">
+                        <div class="circulo">
+                            <i class="fa-solid fa-pen-ruler"></i>
+                        </div>
+                    </div>
+                    <h3>Diseño responsivo</h3>
+                    <p>Garantizar que los sitios web sean visualmente atractivos y funcionales en dispositivos móviles y tabletas</p>
+
+                   
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color3">
+                        <div class="circulo">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+                    <h3>Conocimientos en UX/UI</h3>
+                    <p>Creación de interfaces atractivas y funcionales, diseño de experiencia de usuario y optimización de la usabilidad para mejorar la interacción y satisfacción.</p>
+
+                    
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="col">
+                <div class="card">
+                    <div class="icono color4">
+                        <div class="circulo">
+                            <i class="fa-solid fa-gear"></i>
+                        </div>
+                    </div>
+                    <h3>Mantenimiento y soporte</h3>
+                    <p>Brindar asistencia técnica continua y actualizaciones para garantizar el funcionamiento óptimo de los proyectos a lo largo del tiempo</p>
+
+                  
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color5">
+                        <div class="circulo">
+                            <i class="fa-solid fa-cloud"></i>
+                        </div>
+                    </div>
+                    <h3>Servicios en la Nube</h3>
+                    <p>Experiencia en despliegue, configuración y administración de servicios en la nube. Habilidad para crear soluciones escalables y seguras.</p>
+
+                    
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color6">
+                        <div class="circulo">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                    </div>
+                    <h3>Gestión de bases de datos</h3>
+                    <p>Experiencia en diseño, implementación y administración de bases de datos. Capacidad para optimizar consultas y grandes volúmenes de información</p>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- sección habilidades -->
+    <section class="habilidades" id="habilidades">
+        <h2>Habilidades</h2>
+        <div class="contenedor-habi">
+           
+            <div class="fila">
+                <div class="col">
+                    <div class="imagen-resaltable">
+                        <img src="./img/icono1.png" alt="Habilidad 1">
+                        <span class="etiqueta">Angular</span>
+                    </div>
+                    <div class="imagen-resaltable">
+                        <img src="./img/icono2.png" alt="Habilidad 1">
+                        <span class="etiqueta">PHP</span>
+                    </div>
+                    <div class="imagen-resaltable">
+                        <img src="./img/icono3.png" alt="Habilidad 1">
+                        <span class="etiqueta">Docker</span>
+                    </div>
+                    <div class="imagen-resaltable">
+                        <img src="./img/icono4.png" alt="Habilidad 2">
+                        <span class="etiqueta">Laravel</span>
+                    </div>
+                    <div class="imagen-resaltable">
+                        <img src="./img/icono5.png" alt="Habilidad 3">
+                        <span class="etiqueta">Postman</span>
+                    </div>
+                    <div class="imagen-resaltable">
+                        <img src="./img/icono6.png" alt="Habilidad 4">
+                        <span class="etiqueta">Jenkins</span>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <div class="imagen-resaltable">
+                        <img src="./img/icono7.png" alt="Habilidad 5">
+                        <span class="etiqueta">React</span>
+                    </div>
+                    <div class="imagen-resaltable">
+                        <img src="./img/icono8.png" alt="Habilidad 6">
+                        <span class="etiqueta">Vue</span>
+                    </div>
+                <div class="imagen-resaltable">
+                    <img src="./img/icono9.png" alt="Habilidad 7">
+                    <span class="etiqueta">AWS</span>
+                </div>
+                <div class="imagen-resaltable">
+                    <img src="./img/icono10.png" alt="Habilidad 8">
+                    <span class="etiqueta">Springboot</span>
+                </div>
+                <div class="imagen-resaltable">
+                    <img src="./img/icono11.png" alt="Habilidad 9">
+                    <span class="etiqueta">Java</span>
+                </div>
+                <div class="imagen-resaltable">
+                    <img src="./img/icono12.png" alt="Habilidad 10">
+                    <span class="etiqueta">Swift</span>
+                </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <div class="imagen-resaltable">
+                        <img src="./img/icono13.png" alt="Habilidad 11">
+                        <span class="etiqueta">.NET</span>
+                    </div>
+                    <div class="imagen-resaltable">
+                        <img src="./img/icono14.png" alt="Habilidad 12">
+                        <span class="etiqueta">HTML</span>
+                    </div>
+               
+                    <div class="imagen-resaltable">
+                        <img src="./img/icono15.png" alt="Habilidad 13">
+                        <span class="etiqueta">Javascript</span>
+                    </div>
+                   
+                    <div class="imagen-resaltable">
+                        <img src="./img/icono17.png" alt="Habilidad 15">
+                        <span class="etiqueta">CSS</span>
+                    </div>
+                    <div class="imagen-resaltable">
+                        <img src="./img/icono16.png" alt="Habilidad 14">
+                        <span class="etiqueta">Nodejs</span>
+                    </div>
+                    <div class="imagen-resaltable">
+                        <img src="./img/icono18.png" alt="Habilidad 16">
+                        <span class="etiqueta">Nestjs</span>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <div class="imagen-resaltable">
+                        <img src="./img/icono19.png" alt="Habilidad 11">
+                        <span class="etiqueta">Nextjs</span>
+                    </div>
+                    <div class="imagen-resaltable">
+                        <img src="./img/icono20.png" alt="Habilidad 19">
+                        <span class="etiqueta">Express</span>
+                    </div>
+               
+                    <div class="imagen-resaltable">
+                        <img src="./img/icono21.png" alt="Habilidad 20">
+                        <span class="etiqueta">Python</span>
+                    </div>
+                   
+                    <div class="imagen-resaltable">
+                        <img src="./img/icono22.png" alt="Habilidad 21">
+                        <span class="etiqueta">MySQL</span>
+                    </div>
+                    <div class="imagen-resaltable">
+                        <img src="./img/icono23.png" alt="Habilidad 22">
+                        <span class="etiqueta">MongoDB</span>
+                    </div>
+                    <div class="imagen-resaltable">
+                        <img src="./img/icono24.png" alt="Habilidad 23">
+                        <span class="etiqueta">C#</span>
+                    </div>
+                </div>
+               
+        </div>
+    </section>
+
+
+<!-- sección trabajos -->
+<section class="trabajos" id="trabajos">
+    <h2 class="titulo">Mis Trabajos</h2>
+    <div class="container">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/garden-grove.png" alt="Garden Garove">
+                    <div class="card-description">
+                        <h3 class="card-title">Garden Grove</h3>
+                        <p class="card-text">Un ecommerce para comprar plantas de decoración del hogar o espacios cerrados</p>
+                        <div class="card-link">
+                            <a href="https://chabellylezcano.github.io/garden-grove.github.io/">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/restaurante.png" alt="Restaurante">
+                    <div class="card-description">
+                        <h3 class="card-title">Ristorante Giuletta</h3>
+                        <p class="card-text">Sitio web de un restaurante de comida italiana con una interfaz responsiva y simple</p>
+                        <div class="card-link">
+                            <a href="https://chabellylezcano.github.io/ristoranteGiulietta.github.io/">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/pokedex.png" alt="Pokedex">
+                    <div class="card-description">
+                        <h3 class="card-title">Pokedex</h3>
+                        <p class="card-text">Web que muestra una pokedex en la que puedes buscar y filtrar para encontrar a tu pokemon favorito</p>
+                        <div class="card-link">
+                            <a href="https://chabellylezcano.github.io/pokedex.github.io/">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/admin-dashboard.png" alt="Admin Dashboard">
+                    <div class="card-description">
+                        <h3 class="card-title">Admin Dashboard</h3>
+                        <p class="card-text">Un panel de administración fácil e intuitivo. Pensado teniendo en cuenta UX/UI</p>
+                        <div class="card-link">
+                            <a href="https://chabellylezcano.github.io/dashboard-admin.github.io/">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/clima.png" alt="Clima">
+                    <div class="card-description">
+                        <h3 class="card-title">Weather APP</h3>
+                        <p class="card-text">En esta web puedes visualizar el clima de una ciudad en tiempo real y la previsión para los próximos 5 días</p>
+                        <div class="card-link">
+                            <a href="https://chabellylezcano.github.io/myweather.github.io/">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/login.png" alt="Login">
+                    <div class="card-description">
+                        <h3 class="card-title">Ventana de Login y Registro</h3>
+                        <p class="card-text">Ejemplo de una ventana de autenticación de usuario con un diseño responsivo y con animaciones</p>
+                        <div class="card-link">
+                            <a href="https://chabellylezcano.github.io/login-example-1.github.io/">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Agregar más tarjetas aquí -->
+                
+            </div>
+        </div>
+        
+    </div>
+    <div class="swiper-button-container">
+        <div class="swiper-button-prev custom-prev"></div>
+        <div class="swiper-button-next custom-next"></div>
+    </div>
+</section>
+
+
+    <footer>
+        <p>Creado por Chabelly Lezcano</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
+

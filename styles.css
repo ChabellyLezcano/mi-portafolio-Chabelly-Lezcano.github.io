@@ -1,0 +1,763 @@
+/* importamos la fuente */
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "M PLUS Rounded 1c";
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f6f5ff;
+  overflow-x: hidden; /* Evitar desplazamiento horizontal */
+}
+
+/* SECCION INICIO */
+.inicio {
+  background: linear-gradient(to right, #0000ff, #00add4);
+
+  height: 75vh;
+  padding: 0px 10px;
+}
+.inicio .contenido {
+  max-width: 1100px;
+  margin: auto;
+  color: #fff;
+}
+.inicio header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  align-items: center;
+}
+.inicio .logo {
+  display: flex;
+  align-items: center;
+  color: #5ed8e1;
+  font-size: 25px;
+}
+.inicio .logo i {
+  display: inline-block;
+  margin-right: 20px;
+}
+#inicio header nav a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+}
+#inicio header nav a:hover {
+  border-bottom: 2px solid #00ff9d;
+}
+.inicio .redes a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin: 0 10px;
+}
+.inicio .redes a:hover {
+  color: #00ffc8;
+}
+.inicio .fila {
+  display: flex;
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+.inicio .fila .col {
+  width: 50%;
+}
+.inicio .fila .col h2 {
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+.inicio .fila .col p {
+  margin-bottom: 20px;
+}
+
+.inicio .fila .col .contenedor-img {
+  max-width: 400px;
+  margin: auto;
+}
+.inicio .fila .col .contenedor-img img {
+  width: 100%;
+}
+.inicio .fila .col button {
+  background: none;
+  width: fit-content;
+  padding: 10px 15px;
+  border: 2px solid #ff00bb;
+  color: #fff;
+  background: linear-gradient(to right, #ff00d0, #fb35b6);
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 20px; /* Agregar esta línea para bordes redondeados */
+}
+.inicio .fila .col button:hover {
+  transform: scale(1.1);
+}
+#icono-nav {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+  display: none;
+}
+#icono-nav:hover {
+  background-color: #3e3e3e;
+}
+.sombra {
+  filter: drop-shadow(0em 30px 20px #9bd2f4);
+}
+
+/* Animación de flotar */
+.flotar {
+  animation: flotarAnimacion 3s infinite alternate;
+}
+
+@keyframes flotarAnimacion {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(
+      20px
+    ); /* Puedes ajustar la distancia vertical de la animación aquí */
+  }
+}
+
+
+/* SECCION PERFIL */
+.perfil {
+  height: 90vh;
+  margin-bottom: 80px;
+  padding: 0px 10px;
+  background-repeat: repeat; /* Repetir la imagen en ambas direcciones */
+}
+
+.perfil .contenido {
+  max-width: 1100px;
+  margin: auto;
+  color: #000; /* Cambiar el color del texto a negro */
+}
+
+.perfil .fila {
+  display: flex;
+  margin-top: 50px;
+  padding-bottom: 10px;
+}
+
+.perfil .fila .col {
+  width: 50%;
+  height: 100%;
+  margin-right: 30px; /* Añadir separación horizontal entre la foto y el texto */
+}
+
+.perfil .fila .col:last-child {
+  margin-right: 0; /* Eliminar el margen derecho para la última columna */
+}
+
+/* Agrega una clase para la tarjeta de perfil */
+.perfil .col.card {
+  background-color: #fffdf5; /* Color crema */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 20px;
+}
+
+.perfil .fila .col h2 {
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+
+.perfil .fila .col p {
+  margin-bottom: 20px;
+}
+
+.perfil .fila .col .contenedor-img {
+  width: 300px;
+  height: 300px; /* Ajustar el tamaño del contenedor para que tenga el mismo tamaño que la imagen */
+  margin: auto;
+  padding: auto;
+  border-radius: 50%; /* Agregar marco redondeado a la imagen */
+  overflow: hidden; /* Ocultar partes de la imagen que estén fuera del marco */
+  animation: rotateColors 5s infinite; /* Agregar la animación al marco */
+  box-shadow: 0px 0px 50px rgba(0, 0, 255, 0.5); /* Agregar una sombra con color azul */
+}
+
+@keyframes rotateColors {
+  0% {
+    border: 2px solid #0008ff; /* Color inicial */
+  }
+  25% {
+    border: 2px solid #7a00ff; /* Color 25% de la animación */
+  }
+  50% {
+    border: 2px solid #b88bff; /* Color 50% de la animación */
+  }
+  75% {
+    border: 2px solid #00c8ff; /* Color 75% de la animación */
+  }
+  100% {
+    border: 3px solid #5313e9; /* Volver al color inicial al final de la animación */
+  }
+}
+
+.perfil .fila .col .contenedor-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegurar que la imagen cubra completamente el contenedor */
+  border-radius: 50%; /* Asegurar que la imagen esté completamente redondeada */
+  filter: drop-shadow(
+    0px 0px 20px rgba(0, 0, 255, 0.5)
+  ); /* Agregar una sombra con color azul */
+}
+
+.perfil h3 {
+  margin-bottom: 20px;
+}
+
+.perfil h1 {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.perfil h2 {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+/* Estilos adicionales */
+.nombre-descripcion {
+  display: flex;
+  align-items: center; /* Centrar verticalmente */
+  justify-content: center; /* Centrar horizontalmente */
+}
+
+.typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  background: linear-gradient(
+    90deg,
+    #0008ff,
+    #7a00ff,
+    #b88bff,
+    #00c8ff,
+    #5313e9
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: typing 10s steps(40, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+
+
+/* SECCION SERVICIOS */
+.servicios {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 10px;
+  position: relative;
+  z-index: 10;
+  margin-top: -270px;
+  margin-bottom: 80px;
+}
+
+.servicios .fila {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.servicios .fila .col {
+  text-align: center;
+  width: 30%;
+}
+.servicios .fila .col .card {
+  height: 400px;
+  background-color: #fffdf5;
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Agregar sombra */
+}
+.servicios .icono {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.servicios .icono .circulo {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+}
+.color1 {
+  background: linear-gradient(#ff9900, #ff5b00);
+}
+.color2 {
+  background: linear-gradient(#038aee, #0039a9);
+}
+.color3 {
+  background: linear-gradient(#05bf6f, #00ff84);
+}
+.color4 {
+  background: linear-gradient(#ff0000, #ff006a);
+}
+.color5 {
+  background: linear-gradient(#04e2ee, #017795);
+}
+.color6 {
+  background: linear-gradient(#8904ee, #4b0195);
+}
+
+.servicios h2 {
+  text-align: center;
+  padding: 40px;
+}
+.habilidades .contenedor-habi {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.servicios h3 {
+  margin-bottom: 20px;
+}
+.servicios .card p {
+  color: #8d8d8d;
+  line-height: 28px;
+  font-size: 12px;
+}
+.servicios .card a {
+  text-decoration: none;
+  color: #008cff;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Animación de resaltado con sombra y zoom */
+.servicios .card {
+  transition: box-shadow 0.3s, transform 0.3s;
+  position: relative;
+}
+
+.servicios .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: transparent;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); /* Eliminar el radio del borde (0) */
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.servicios .card:hover {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Cambiar "rgba(0, 0, 255, 0.2)" por el color que desees */
+  transform: scale(1.05); /* Puedes ajustar el valor para el nivel de zoom */
+}
+
+.servicios .card:hover::before {
+  box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0.2); /* Cambiar "rgba(0, 0, 255, 0.2)" por el color que desees */
+  transform: scale(1.05); /* Puedes ajustar el valor para el nivel de zoom */
+}
+
+/* SECCION HABILIDADES */
+.habilidades {
+  color: black;
+  padding: 40px 0;
+  text-align: center; /* Centrar el contenido horizontalmente */
+  margin-bottom: 80px;
+}
+
+.habilidades h2 {
+  text-align: center;
+}
+
+.habilidades .contenedor-habi {
+  max-width: 1100px;
+  margin: auto; /* Centrar el contenedor horizontalmente */
+  display: flex; /* Utilizar flexbox en lugar de grid */
+  flex-wrap: wrap;
+  justify-content: center; /* Centrar las habilidades horizontalmente */
+  gap: 20px;
+}
+
+/* Estilos para las imágenes resaltables */
+.imagen-resaltable {
+  display: flex; /* Usar flexbox para centrar el contenido verticalmente */
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 40px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.imagen-resaltable img {
+  width: 60px;
+  height: 60px;
+}
+
+.imagen-resaltable .etiqueta {
+  display: none;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.imagen-resaltable:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0.2);
+}
+
+.imagen-resaltable:hover .etiqueta {
+  display: block;
+}
+
+/* SECCION TRABAJOS */
+
+.trabajos .titulo {
+  text-align: center;
+}
+.container {
+  padding: 70px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: nowrap; /* Evitar que los elementos se envuelvan */
+  overflow: hidden; /* Ocultar el desbordamiento horizontal */
+}
+
+.container .swiper-container {
+  width: 30%;
+  height: 100%;
+  flex-wrap: nowrap; /* Evitar que los elementos se envuelvan */
+  margin: 10px;
+}
+
+.container .swiper-slide {
+  position: relative;
+  text-align: center;
+  flex: 1 0 auto; /* Deshabilitar el crecimiento y reducción flexibles */
+  font-size: 18px;
+  background: #fff;
+  border-radius: 15px;
+  text-align: start;
+  box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+  margin-right: 40px; /* Agregar margen entre los contenedores */
+  transition: transform 0.3s ease;
+}
+
+.container .swiper-slide:last-child {
+  margin-right: 0; /* Eliminar margen en el último contenedor */
+  flex-grow: 1; /* Hacer que el último elemento se expanda */
+}
+
+.container .swiper-slide:hover {
+  transform: scale(1.05); /* Escala ligeramente el elemento en hover */
+}
+
+.container .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.container .swiper-slide .card-description {
+  padding: 2rem 2rem;
+}
+.container .swiper-slide .card-title,
+.container .swiper-slide .card-text {
+  margin-bottom: 0.5rem;
+}
+.container .swiper-slide .card-link {
+  text-align: center;
+}
+.container .swiper-slide .card-link a {
+  text-decoration: none;
+  color: #1d6ce2;
+}
+
+/* Estilos para el contenedor de botones de navegación */
+.swiper-button-container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 10;
+}
+
+.swiper-button-prev.custom-prev,
+.swiper-button-next.custom-next {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 30px;
+  margin-top: 10px;
+}
+
+.swiper-button-prev.custom-prev {
+  margin-left: 20px;
+}
+
+.swiper-button-next.custom-next {
+  margin-right: 20px;
+}
+
+.card-title {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Estilo para el botón "Ver más" */
+.card-link a {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #ffffff; /* Cambia el color según tus preferencias */
+  color: white;
+  border: 2px solid #0000ff; /* Agrega un borde con el color deseado */
+  border-radius: 25px; /* Esto hace que el botón sea redondeado */
+  text-decoration: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    color 0.3s ease; /* Agrega la transición del color de fondo, el borde y el color de texto */
+}
+
+.card-link a:hover {
+  color: white; /* Cambia el color del texto al pasar el cursor sobre él */
+  background-color: rgba(
+    214,
+    214,
+    214,
+    0.575
+  ); /* Cambia el color del botón al pasar el cursor sobre él */
+  border-color: #0000ff8b; /* Cambia el color del borde al pasar el cursor sobre él */
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 7px 0;
+  font-size: 14px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+/* SECCION RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+  .redes {
+    display: none;
+  }
+
+  #nav {
+    display: none;
+  }
+
+  #nav.responsive {
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+  }
+
+  #nav.responsive a {
+    font-size: 30px;
+  }
+
+  #icono-nav {
+    display: block;
+  }
+
+  .inicio {
+    height: auto;
+  }
+
+  .inicio .fila {
+    display: block;
+  }
+
+  .inicio .fila .col {
+    width: 100%;
+    text-align: center;
+  }
+
+  .inicio .fila .col h2 {
+    margin-top: 20px;
+  }
+
+  .inicio .fila .col .contenedor-img {
+    width: 90%;
+    margin-top: 30px;
+  }
+
+  .servicios {
+    margin-top: 50px;
+    padding: 20px;
+  }
+
+  .servicios .fila {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .servicios .fila .col {
+    width: 70%;
+    margin: auto;
+  }
+
+  .servicios .fila .col .card {
+    margin-bottom: 20px;
+  }
+
+  .trabajos nav a {
+    margin: 0 5px;
+  }
+
+  .contacto .fila {
+    display: block !important;
+  }
+
+  .contacto .fila .col {
+    text-align: center;
+    width: 100% !important;
+  }
+
+  .contacto .fila .col .info {
+    float: left;
+    font-size: 12px;
+    width: 25%;
+  }
+
+  .perfil .fila {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 10px;
+  }
+
+  .perfil .col.card {
+    width: 75vh;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: none;
+    padding-bottom: 130px;
+  }
+
+  .perfil .foto-perfil {
+    display: flex;
+    margin-right: 30rem;
+    margin: 0 auto; /* Centrar horizontalmente */
+    border-radius: 50%; /* Hacer que la foto sea circular */
+    width: 150px; /* Ajusta el tamaño de la foto según tus necesidades */
+    height: 150px;
+    object-fit: cover; /* Ajustar la imagen manteniendo su relación de aspecto */
+  }
+
+  .servicios {
+    margin-top: 240px;
+    padding: 20px;
+  }
+
+  /* Estilos para las imágenes resaltables */
+  .imagen-resaltable {
+    display: flex; /* Usar flexbox para centrar el contenido verticalmente */
+    align-items: center;
+    justify-content: center;
+    margin: 45px;
+    padding: 45px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .container {
+    width: 400px;
+    margin: 20px;
+    padding: 20px 40px;
+  }
+
+  .container .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .container .swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 15px;
+    text-align: start;
+    box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+    margin-right: 40px; /* Agregar margen entre los contenedores */
+    transition: transform 0.3s ease;
+  }
+}
