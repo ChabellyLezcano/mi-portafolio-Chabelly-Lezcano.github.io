@@ -645,7 +645,11 @@ footer {
     display: block;
   }
 
-  .inicio,
+  .inicio{
+    height: auto;
+    margin: auto;
+    padding: 20px;
+  }
   .servicios {
     height: auto;
     margin-top: 220px;
